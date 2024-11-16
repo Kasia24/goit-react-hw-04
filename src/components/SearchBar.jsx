@@ -54,6 +54,11 @@ const SearchBar = ({ onSubmit }) => {
   return (
     <header className="search-bar">
       <form onSubmit={handleSubmit}>
+        <button type="submit" className="search-button">
+          <span role="img" aria-label="search-icon">
+            🔍
+          </span>
+        </button>
         <input
           className="input-container"
           type="text"
@@ -63,11 +68,7 @@ const SearchBar = ({ onSubmit }) => {
           className="search-input"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-        >
-          <span role="img" aria-label="search-icon">
-            🔍
-          </span>
-        </input>
+        ></input>
       </form>
       <Toaster />
     </header>
