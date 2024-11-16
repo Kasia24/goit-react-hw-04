@@ -55,11 +55,6 @@ const SearchBar = ({ onSubmit }) => {
   return (
     <header className="search-bar">
       <form onSubmit={handleSubmit}>
-        <button type="submit" className="search-button">
-          <span>
-            <FaSearch size={40} color="black" />
-          </span>
-        </button>
         <input
           className="input-container"
           type="text"
@@ -69,6 +64,9 @@ const SearchBar = ({ onSubmit }) => {
           className="search-input"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
+          FaSearch
+          size={20}
+          color="black"
         ></input>
       </form>
       <Toaster />
