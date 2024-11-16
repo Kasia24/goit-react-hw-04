@@ -38,9 +38,6 @@ import "./SearchBar.css";
 
 export default SearchBar;*/
 
-import React, { useState } from "react";
-import toast, { Toaster } from "react-hot-toast";
-
 const SearchBar = ({ onSubmit }) => {
   const [query, setQuery] = useState("");
 
