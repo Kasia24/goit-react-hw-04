@@ -5,7 +5,7 @@ import Loader from "./components/Loader";
 import ErrorMessage from "./components/ErrorMessage";
 import LoadMoreBtn from "./components/LoadMoreBtn";
 import ImageModal from "./components/ImageModal";
-import { fetchImages } from "./api";
+import { fetchImages } from "./components/api";
 
 const App = () => {
   // Stany aplikacji
