@@ -64,10 +64,11 @@ const SearchBar = ({ onSubmit }) => {
           className="search-input"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          FaSearch
-          size={20}
-          color="black"
         ></input>
+        {/* Add the FaSearch icon here */}
+        <button type="submit" className="search-icon-button">
+          <FaSearch size={20} color="black" />
+        </button>
       </form>
       <Toaster />
     </header>
