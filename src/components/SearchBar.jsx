@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import "./SearchBar.css";
+import { FaSearch } from "react-icons/fa";
 
 /*const SearchBar = ({ onSubmit }) => {
   const [query, setQuery] = useState("");
@@ -55,8 +56,8 @@ const SearchBar = ({ onSubmit }) => {
     <header className="search-bar">
       <form onSubmit={handleSubmit}>
         <button type="submit" className="search-button">
-          <span role="img" aria-label="search-icon">
-            🔍
+          <span>
+            <FaSearch size={40} color="black" />
           </span>
         </button>
         <input
