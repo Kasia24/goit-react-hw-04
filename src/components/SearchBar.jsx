@@ -65,7 +65,9 @@ const SearchBar = ({ onSubmit }) => {
           onChange={(e) => setQuery(e.target.value)}
         />
         <button type="submit" className="search-button">
-          Search
+          <span role="img" aria-label="search-icon">
+            🔍
+          </span>
         </button>
       </form>
       <Toaster />
