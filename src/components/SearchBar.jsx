@@ -1,51 +1,14 @@
 import React, { useState } from "react";
-import toast, { Toaster } from "react-hot-toast";
-import "./SearchBar.css";
-import { FaSearch } from "react-icons/fa";
-
-/*const SearchBar = ({ onSubmit }) => {
-  const [query, setQuery] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!query.trim()) {
-      alert("Please enter a search term"); // or use a library like React Hot Toast
-      return;
-    }
-    onSubmit(query);
-  };
-
-  return (
-    <header className="search-bar">
-      <form onSubmit={handleSubmit}>
-        <div className="input-container">
-          <input
-            type="text"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search images and photos"
-            className="search-input"
-          />
-          <button type="submit" className="search-button">
-            <span role="img" aria-label="search-icon">
-              🔍
-            </span>
-          </button>
-        </div>
-      </form>
-    </header>
-  );
-};
-
-export default SearchBar;*/
+import toast from "react-hot-toast";
 
 const SearchBar = ({ onSubmit }) => {
   const [query, setQuery] = useState("");
 
+  const handleChange = (e) => setQuery(e.target.value);
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (query.trim() === "") {
-      toast.error("Please enter a search term.");
+    if (!query.trim()) {
+      toast.error("Please enter a search term");
       return;
     }
     onSubmit(query);
@@ -53,24 +16,19 @@ const SearchBar = ({ onSubmit }) => {
   };
 
   return (
-    <header className="search-bar">
+    <header>
       <form onSubmit={handleSubmit}>
-        {/* Add the FaSearch icon here */}
-        <button type="submit" className="search-button">
-          <FaSearch size={20} color="black" />
-        </button>
         <input
-          /*className="input-container"*/
+          className="input"
           type="text"
           autoComplete="off"
           autoFocus
           placeholder="Search images and photos"
-          className="search-input"
           value={query}
-          onChange={(e) => setQuery(e.target.value)}
-        ></input>
+          onChange={handleChange}
+        />
+        <button type="submit">Search</button>
       </form>
-      <Toaster />
     </header>
   );
 };
