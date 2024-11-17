@@ -17,7 +17,7 @@ const SearchBar = ({ onSubmit }) => {
   };
 
   return (
-    <header>
+    <header className="search-bar">
       <form onSubmit={handleSubmit}>
         <input
           className="input"
