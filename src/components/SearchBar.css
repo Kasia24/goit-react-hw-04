@@ -14,7 +14,7 @@
   overflow: hidden;
 }*/
 
-.search-input {
+.input {
   border: none;
   padding: 10px;
   font-size: 16px;
@@ -23,19 +23,24 @@
   height: 21px;
 }
 
-.search-button {
+.submit {
   border: none;
   cursor: pointer;
   font-size: 16px;
   padding: 8px;
-  position: absolute;
   color: black;
   background-color: white;
   border-radius: 0%;
-  left: 568px;
-  height: 41px;
 }
 
-.search-input::placeholder {
+.submit::placeholder {
   text-align: left;
+}
+.search-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-size: cover;
+  margin-right: 8px;
+  cursor: pointer;
 }
