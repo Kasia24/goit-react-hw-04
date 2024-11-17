@@ -20,7 +20,7 @@ const SearchBar = ({ onSubmit }) => {
   return (
     <header className="search-bar">
       <form onSubmit={handleSubmit}>
-        <FaSearch className="search-icon" />
+        <FaSearch className="search-icon" onClick={handleSubmit} />
         <input
           className="input"
           type="text"
