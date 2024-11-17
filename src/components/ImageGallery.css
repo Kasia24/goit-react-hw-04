@@ -2,9 +2,16 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
-  padding: 16px;
   list-style: none;
+  margin: 6px;
 }
+
 .image-item {
   cursor: pointer;
+  object-fit: cover;
+  height: 200px;
+  gap: 8x;
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  margin-bottom: 10px;
 }

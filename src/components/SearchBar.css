@@ -3,7 +3,7 @@
   padding: 6px;
   display: flex;
   justify-content: center;
-  position: relative;
+  width: 100%;
 }
 
 /*.input-container {

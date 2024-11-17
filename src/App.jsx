@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import toast, { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 import SearchBar from "./components/SearchBar";
 import ImageGallery from "./components/ImageGallery";
 import Loader from "./components/Loader";
